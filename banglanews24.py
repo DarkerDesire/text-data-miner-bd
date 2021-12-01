@@ -50,3 +50,29 @@ for index in range(1, 25000):
             url = newspaper_base_url + "category/মুক্তমত/16?page=" + str(index)
         elif j == 19:
             url = newspaper_base_url + "category/জলবায়ু-পরিবেশ/21?page=" + str(index)
+        elif j == 20:
+            url = newspaper_base_url + "category/কলকাতা/22?page=" + str(index)
+        elif j == 21:
+            url = newspaper_base_url + "category/ত্রিপুরা/38?page=" + str(index)
+        elif j == 22:
+            url = newspaper_base_url + "category/অফবিট/34?page=" + str(index)
+        elif j == 23:
+            url = newspaper_base_url + "news-Sort-By-District?division=2&district=1&page=" + str(index)
+        elif j == 24:
+            url = newspaper_base_url + "news-Sort-By-District?division=3&district=1&page=" + str(index)
+        elif j == 25:
+            url = newspaper_base_url + "news-Sort-By-District?division=4&district=1&page=" + str(index)
+        elif j == 26:
+            url = newspaper_base_url + "news-Sort-By-District?division=5&district=1&page=" + str(index)
+        elif j == 27:
+            url = newspaper_base_url + "news-Sort-By-District?division=6&district=1&page=" + str(index)
+        elif j == 28:
+            url = newspaper_base_url + "news-Sort-By-District?division=7&district=1&page=" + str(index)
+        elif j == 29:
+            url = newspaper_base_url + "news-Sort-By-District?division=8&district=1&page=" + str(index)
+        elif j == 30:
+            url = newspaper_base_url + "news-Sort-By-District?division=9&district=1&page=" + str(index)
+
+        print(url)
+
+        try:
