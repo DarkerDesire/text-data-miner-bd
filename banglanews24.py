@@ -101,3 +101,18 @@ for index in range(1, 25000):
                         print(article_url)
                     else:
                         continue
+                else:
+                    continue
+
+                try:
+                    article_data = requests.get(article_url).text
+                except:
+                    print("No response for content in link,trying to reconnect")
+                    time.sleep(2)
+                    continue
+
+                article_soup = BeautifulSoup(article_data, "html.parser")
+                paragraphs = article_soup.find_all("p")
+                title = article_soup.find("title").get_text()
+                date_time = article_soup.find("meta", {"name": "publish-date"})
+                date = date_time.get('content').split(" ")[1]
