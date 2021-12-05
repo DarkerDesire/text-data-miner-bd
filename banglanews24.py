@@ -116,3 +116,27 @@ for index in range(1, 25000):
                 title = article_soup.find("title").get_text()
                 date_time = article_soup.find("meta", {"name": "publish-date"})
                 date = date_time.get('content').split(" ")[1]
+                splitted_date = date.split("-")
+
+                author = article_soup.find_all("span")[12].get_text()
+
+                year = splitted_date[0]
+                month = splitted_date[1]
+                day = splitted_date[2]
+
+                length = len(paragraphs)
+                length = length - 1
+
+                i = 0
+
+                article_content = ""
+                for paragraph in paragraphs:
+                    if i == 0:
+                        pass
+                    elif i == 1:
+                        try:
+                            article_content += paragraph.get_text().split(":")[1][1:] + "\n"
+                        except:
+                            article_content += paragraph.get_text() + "\n"
+                    elif i <= length - 2:
+                        article_content += paragraph.get_text() + "\n"
