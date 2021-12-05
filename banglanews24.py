@@ -91,3 +91,13 @@ for index in range(1, 25000):
         else:
             for link in all_links:
                 link_separator = link.get('href')
+                try:
+                    link_tokens = link_separator.split("/")
+                except:
+                    continue
+                if len(link_tokens) == 7:
+                    if link_tokens[4] == "news" and link_tokens[5] == "bd":
+                        article_url = link_separator
+                        print(article_url)
+                    else:
+                        continue
