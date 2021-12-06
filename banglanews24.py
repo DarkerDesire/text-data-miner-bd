@@ -140,3 +140,25 @@ for index in range(1, 25000):
                             article_content += paragraph.get_text() + "\n"
                     elif i <= length - 2:
                         article_content += paragraph.get_text() + "\n"
+                    else:
+                        pass
+                    i = i + 1
+
+                data = "<article>\n"
+                data += "<title>" + title + "</title>\n"
+                # data +=  "<date>" + date + "</date>\n"
+                data += "<text>\n" + article_content + "</text>\n"
+                data += "</article>"
+
+                output_file_name = link_tokens[3] + "_" + link_tokens[4] + "_" + link_tokens[5] + "_" + link_tokens[6]
+                output_dir = './{}/{}/{}/bn'.format(year, month, day)
+                raw_output_dir = '../' + "Raw" + '/' + "Banglanews24" + '/' + output_dir
+
+                try:
+                    os.makedirs(output_dir)
+                except OSError:
+                    pass
+                try:
+                    os.makedirs(raw_output_dir)
+                except OSError:
+                    pass
