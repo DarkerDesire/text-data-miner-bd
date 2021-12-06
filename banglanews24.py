@@ -162,3 +162,9 @@ for index in range(1, 25000):
                     os.makedirs(raw_output_dir)
                 except OSError:
                     pass
+
+                with open(output_dir + '/raw_' + output_file_name, 'w') as file:
+                    file.write(article_soup.encode('utf-8'))
+
+                with open(output_dir + '/' + output_file_name, 'w') as file:
+                    file.write(data.encode('utf-8'))
