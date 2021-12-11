@@ -77,3 +77,27 @@ for i in range(100):
 
         try:
             archive_soup = requests.get(url)
+        except:
+            print("No response for links in archive,passing")
+            continue
+
+        soup = BeautifulSoup(archive_soup.content, "html.parser")
+
+        all_links = soup.find_all("a")
+        page_links_length = len(all_links)
+
+        if (page_links_length == 0):
+            break
+        else:
+            for link in all_links:
+                link_separator = link.get('href')
+                link_tokens = link_separator.split("/")
+                if len(link_tokens) == 5:
+                    link = "https://www.bd-pratidin.com/" + link_separator
+                else:
+                    continue
+                article_url = link
+
+                year = link_tokens[1]
+                month = link_tokens[2]
+                day = link_tokens[3]
