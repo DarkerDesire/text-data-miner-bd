@@ -101,3 +101,20 @@ for i in range(100):
                 year = link_tokens[1]
                 month = link_tokens[2]
                 day = link_tokens[3]
+
+                if year.startswith('20'):
+                    print(article_url)
+                else:
+                    continue
+
+                output_file_name = link_tokens[0] + "_" + link_tokens[1] + "_" + link_tokens[2] + "_" + link_tokens[
+                    3] + "_" + link_tokens[4]
+
+                output_dir = './{}/{}/{}/bn'.format(year, month, day)
+                raw_output_dir = '../' + "Raw" + '/' + "BangladeshPratidin" + '/' + output_dir
+
+                try:
+                    os.makedirs(output_dir)
+                except OSError:
+                    pass
+                try:
