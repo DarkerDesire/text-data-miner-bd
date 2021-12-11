@@ -57,3 +57,23 @@ for i in range(100):
         elif j == 19:
             url = newspaper_base_url + "life/" + str(index)
         elif j == 20:
+            url = newspaper_base_url + "health-tips/" + str(index)
+        elif j == 21:
+            url = newspaper_base_url + "city-roundup/" + str(index)
+        elif j == 22:
+            url = newspaper_base_url + "features/" + str(index)
+        elif j == 23:
+            url = newspaper_base_url + "job-market/" + str(index)
+        elif j == 24:
+            url = newspaper_base_url + "readers-column/" + str(index)
+        elif j == 25:
+            url = newspaper_base_url + "abroad-paper/" + str(index)
+        elif j == 26:
+            url = newspaper_base_url + "kolkata/" + str(index)
+        elif j == 27:
+            url = newspaper_base_url + "tech-world/" + str(index)
+
+        print(url)
+
+        try:
+            archive_soup = requests.get(url)
