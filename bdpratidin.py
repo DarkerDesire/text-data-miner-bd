@@ -139,3 +139,27 @@ for i in range(100):
 
                 length = len(paragraphs)
                 length = length - 1
+
+                i = 0
+
+                article_content = ""
+                for paragraph in paragraphs:
+                    if i == 0:
+                        date = str(i) + " " + paragraph.get_text()
+                    elif i != length:
+                        article_content += str(i) + " " + paragraph.get_text() + "\n"
+                    else:
+                        pass
+                    i = i + 1
+
+                data = "<article>\n"
+                data += "<title>" + title + "</title>\n"
+                data += "<date>" + date + "</date>\n"
+                data += "<text>" + article_content + "</text>\n"
+                data += "</article>"
+
+                try:
+                    with open(output_dir + '/' + output_file_name, 'w', encoding='utf8') as file:
+                        file.write(data)
+                except:
+                    pass
