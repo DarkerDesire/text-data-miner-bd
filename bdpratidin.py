@@ -118,3 +118,24 @@ for i in range(100):
                 except OSError:
                     pass
                 try:
+                    os.makedirs(raw_output_dir)
+                except OSError:
+                    pass
+
+                try:
+                    article_data = requests.get(article_url).text
+                except:
+                    print("No response for content in link,trying to reconnect")
+                    time.sleep(2)
+                    continue
+                article_soup = BeautifulSoup(article_data, "html.parser")
+                with open(raw_output_dir + '/' + output_file_name, 'w') as file:
+                    file.write(str(article_soup))
+
+                print(article_url)
+                paragraphs = article_soup.find_all("p")
+
+                title = article_soup.find("h1").get_text()
+
+                length = len(paragraphs)
+                length = length - 1
