@@ -45,3 +45,33 @@ for index in range(1, 100):
         elif j == 13:
             url = newspaper_base_url + "?cat=14&paged=" + str(index)
         elif j == 14:
+            url = newspaper_base_url + "?cat=19&paged=" + str(index)
+        elif j == 15:
+            url = newspaper_base_url + "?cat=37&paged=" + str(index)
+        elif j == 16:
+            url = newspaper_base_url + "?cat=43&paged=" + str(index)
+        elif j == 18:
+            url = newspaper_base_url + "?cat=16&paged=" + str(index)
+        elif j == 19:
+            url = newspaper_base_url + "?cat=15&paged=" + str(index)
+        elif j == 20:
+            url = newspaper_base_url + "?cat=21&paged=" + str(index)
+        elif j == 21:
+            url = newspaper_base_url + "?cat=864&paged=" + str(index)
+        elif j == 22:
+            url = newspaper_base_url + "?cat=865&paged=" + str(index)
+        elif j == 23:
+            url = newspaper_base_url + "?cat=33&paged=" + str(index)
+        elif j == 24:
+            url = newspaper_base_url + "?cat=18&paged=" + str(index)
+        elif j == 25:
+            url = newspaper_base_url + "?cat=911&paged=" + str(index)
+        elif j == 26:
+            url = newspaper_base_url + "?cat=12&paged=" + str(index)
+        elif j == 27:
+            url = newspaper_base_url + "?cat=26&paged=" + str(index)
+        elif j == 28:
+            url = newspaper_base_url + "?cat=22&paged=" + str(index)
+        elif j == 29:
+            url = newspaper_base_url + "?cat=31&paged=" + str(index)
+        elif j == 30:
