@@ -27,3 +27,21 @@ for index in range(1, 100):
         elif j == 4:
             url = newspaper_base_url + "?cat=32&paged=" + str(index)
         elif j == 5:
+            url = newspaper_base_url + "?cat=44&paged=" + str(index)
+        elif j == 6:
+            url = newspaper_base_url + "?cat=47&paged=" + str(index)
+        elif j == 7:
+            url = newspaper_base_url + "?cat=24&paged=" + str(index)
+        elif j == 8:
+            url = newspaper_base_url + "?cat=17&paged=" + str(index)
+        elif j == 9:
+            url = newspaper_base_url + "?cat=866&paged=" + str(index)
+        elif j == 10:
+            url = newspaper_base_url + "?cat=35&paged=" + str(index)
+        elif j == 11:
+            url = newspaper_base_url + "?cat=27&paged=" + str(index)
+        elif j == 12:
+            url = newspaper_base_url + "?cat=914&paged=" + str(index)
+        elif j == 13:
+            url = newspaper_base_url + "?cat=14&paged=" + str(index)
+        elif j == 14:
