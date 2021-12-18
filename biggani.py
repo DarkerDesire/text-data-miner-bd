@@ -99,3 +99,24 @@ for index in range(1, 100):
         try:
             archive_soup = requests.get(url)
         except:
+            print("No response for links in archive,passing")
+            continue
+
+        soup = BeautifulSoup(archive_soup.content, "html.parser")
+
+        all_links = soup.find_all("a")
+        page_links_length = len(all_links)
+
+        if (page_links_length == 0):
+            break
+        else:
+            for link in all_links:
+                link_separator = link.get('href')
+                try:
+                    link_tokens = link_separator.split("/")
+                except:
+                    continue
+                if len(link_tokens) == 4:
+                    if "?p=" in link_tokens[3]:
+                        if "respond" in link_tokens[3] or "comments" in link_tokens[3]:
+                            continue
