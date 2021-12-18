@@ -75,3 +75,27 @@ for index in range(1, 100):
         elif j == 29:
             url = newspaper_base_url + "?cat=31&paged=" + str(index)
         elif j == 30:
+            url = newspaper_base_url + "?cat=36&paged=" + str(index)
+        elif j == 31:
+            url = newspaper_base_url + "?cat=20&paged=" + str(index)
+        elif j == 32:
+            url = newspaper_base_url + "?cat=3&paged=" + str(index)
+        elif j == 33:
+            url = newspaper_base_url + "?cat=159&paged=" + str(index)
+        elif j == 34:
+            url = newspaper_base_url + "?cat=13&paged=" + str(index)
+        elif j == 35:
+            url = newspaper_base_url + "?cat=34&paged=" + str(index)
+        elif j == 36:
+            url = newspaper_base_url + "?cat=23&paged=" + str(index)
+        elif j == 37:
+            url = newspaper_base_url + "?cat=39&paged=" + str(index)
+        elif j == 38:
+            url = newspaper_base_url + "?cat=912&paged=" + str(index)
+        elif j == 39:
+            url = newspaper_base_url + "?cat=48&paged=" + str(index)
+        print(url)
+
+        try:
+            archive_soup = requests.get(url)
+        except:
