@@ -120,3 +120,29 @@ for index in range(1, 100):
                     if "?p=" in link_tokens[3]:
                         if "respond" in link_tokens[3] or "comments" in link_tokens[3]:
                             continue
+                        else:
+                            article_url = link_separator
+                    else:
+                        continue
+                else:
+                    continue
+
+                output_file_name = link_tokens[3][3:]
+
+                output_dir = "./Data"
+                raw_output_dir = "./Raw"
+
+                try:
+                    os.makedirs(output_dir)
+                except OSError:
+                    pass
+                try:
+                    os.makedirs(raw_output_dir)
+                except OSError:
+                    pass
+
+                try:
+                    print(article_url)
+                    article_data = requests.get(article_url).text
+                except:
+                    print("No response for content in link,trying to reconnect")
