@@ -146,3 +146,29 @@ for index in range(1, 100):
                     article_data = requests.get(article_url).text
                 except:
                     print("No response for content in link,trying to reconnect")
+                    time.sleep(2)
+                    continue
+                article_soup = BeautifulSoup(article_data, "html.parser")
+                with open(raw_output_dir + '/' + output_file_name, 'w') as file:
+                    file.write(str(article_soup))
+
+                try:
+                    article_content = article_soup.find("div", {"class": "entry"}).get_text(separator='\n')
+                except:
+                    article_content = ""
+
+                try:
+                    author = article_soup.find("span", {"class": "post-meta-author"}).get_text().strip()
+                except:
+                    author = ""
+
+                try:
+                    title = article_soup.find("title").get_text().split("-")[0].strip()
+                except:
+                    title = ""
+
+                data = "<article>\n"
+                data += "<title>" + title + "</title>\n"
+                data += "<author>" + author + "</author>\n"
+                data += "<text>\n" + article_content + "\n</text>\n"
+                data += "</article>"
