@@ -172,3 +172,9 @@ for index in range(1, 100):
                 data += "<author>" + author + "</author>\n"
                 data += "<text>\n" + article_content + "\n</text>\n"
                 data += "</article>"
+
+                try:
+                    with open(output_dir + '/' + output_file_name, 'w') as file:
+                        file.write(data.encode('utf-8'))
+                except:
+                    pass
