@@ -7,4 +7,5 @@ import requests
 
 
 def month_converter(month):
-    if m
+    if month == "জানুয়ারী":
+      
