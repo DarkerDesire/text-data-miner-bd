@@ -9,4 +9,5 @@ import requests
 def month_converter(month):
     if month == "জানুয়ারী":
         month = 1
-    elif month == "ফেব্
+    elif month == "ফেব্রুয়ারী":
+        
