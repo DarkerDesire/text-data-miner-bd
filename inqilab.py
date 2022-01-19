@@ -19,4 +19,4 @@ def month_converter(month):
         month = 5
     elif month == "জুন":
         month = 6
-   
+    elif month == "জুলা
