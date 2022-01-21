@@ -22,4 +22,5 @@ def month_converter(month):
     elif month == "জুলাই":
         month = 7
     elif month == "আগস্ট":
-        
+        month = 8
+    elif mont
