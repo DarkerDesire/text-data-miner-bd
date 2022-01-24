@@ -26,4 +26,5 @@ def month_converter(month):
     elif month == "সেপ্টেম্বর":
         month = 9
     elif month == "অক্টোবর":
-        mon
+        month = 10
+    elif month ==
