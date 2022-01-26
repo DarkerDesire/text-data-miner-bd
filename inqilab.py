@@ -35,4 +35,5 @@ def month_converter(month):
     return month
 
 
-def date_
+def date_translator(bn_number):
+  
