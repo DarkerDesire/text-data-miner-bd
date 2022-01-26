@@ -28,4 +28,6 @@ def month_converter(month):
     elif month == "অক্টোবর":
         month = 10
     elif month == "নভেম্বর":
-        mont
+        month = 11
+    else:
+    
