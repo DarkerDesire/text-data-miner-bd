@@ -37,4 +37,5 @@ def month_converter(month):
 
 def date_translator(bn_number):
     en_number = ""
-    for letter in
+    for letter in bn_number:
+   
