@@ -40,4 +40,5 @@ def date_translator(bn_number):
     for letter in bn_number:
         if letter == '০':
             en_number += "0"
-        elif lette
+        elif letter == '১':
+          
