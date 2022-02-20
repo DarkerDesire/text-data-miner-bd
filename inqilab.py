@@ -44,4 +44,5 @@ def date_translator(bn_number):
             en_number += "1"
         elif letter == '২':
             en_number += "2"
-        elif l
+        elif letter == '৩':
+    
