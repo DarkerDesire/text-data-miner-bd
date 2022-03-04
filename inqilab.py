@@ -54,3 +54,4 @@ def date_translator(bn_number):
             en_number += "6"
         elif letter == '৭':
             en_number += "7"
+        elif letter 
