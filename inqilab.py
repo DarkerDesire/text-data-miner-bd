@@ -62,4 +62,6 @@ def date_translator(bn_number):
     return en_number
 
 
-newspaper_base_url = 'https://www.dai
+newspaper_base_url = 'https://www.dailyinqilab.com/'
+
+for index 
