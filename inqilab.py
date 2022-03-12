@@ -62,4 +62,4 @@ def date_translator(bn_number):
     return en_number
 
 
-newspaper_base_ur
+newspaper_base_url = 'https://www.dai
