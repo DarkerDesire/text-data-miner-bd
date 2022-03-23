@@ -65,4 +65,6 @@ def date_translator(bn_number):
 newspaper_base_url = 'https://www.dailyinqilab.com/'
 
 for index in range(1, 6300):
-    for j in range(7
+    for j in range(7):
+        if j == 0:
+   
