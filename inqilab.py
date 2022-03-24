@@ -67,4 +67,4 @@ newspaper_base_url = 'https://www.dailyinqilab.com/'
 for index in range(1, 6300):
     for j in range(7):
         if j == 0:
-            url = newspaper_base_url + "newscategory/int
+            url = newspaper_base_url + "newscategory/international//?page="
