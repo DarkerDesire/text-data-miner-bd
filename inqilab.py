@@ -69,4 +69,4 @@ for index in range(1, 6300):
         if j == 0:
             url = newspaper_base_url + "newscategory/international//?page=" + str(index)
         elif j == 1:
-    
+            url = newspaper_b
