@@ -78,4 +78,4 @@ for index in range(1, 6300):
             url = newspaper_base_url + "newscategory/city//?page=" + str(index)
         elif j == 5:
             url = newspaper_base_url + "newscategory/islami-world//?page=" + str(index)
-  
+        elif j == 6:
