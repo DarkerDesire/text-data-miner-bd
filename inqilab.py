@@ -81,4 +81,7 @@ for index in range(1, 6300):
         elif j == 6:
             url = newspaper_base_url + "newscategory/editors//?page=" + str(index)
 
-        print(u
+        print(url)
+
+        try:
+     
