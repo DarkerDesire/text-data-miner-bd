@@ -84,4 +84,5 @@ for index in range(1, 6300):
         print(url)
 
         try:
-            archive_soup = r
+            archive_soup = requests.get(url)
+    
