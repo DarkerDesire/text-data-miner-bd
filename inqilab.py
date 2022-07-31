@@ -86,4 +86,5 @@ for index in range(1, 6300):
         try:
             archive_soup = requests.get(url)
         except:
-            print("No response for links in arc
+            print("No response for links in archive,passing")
+  
