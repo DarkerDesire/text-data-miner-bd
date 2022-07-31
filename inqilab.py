@@ -86,4 +86,4 @@ for index in range(1, 6300):
         try:
             archive_soup = requests.get(url)
         except:
-           
+            print("No response f
