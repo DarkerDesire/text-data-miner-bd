@@ -89,4 +89,4 @@ for index in range(1, 6300):
             print("No response for links in archive,passing")
             continue
 
-        soup = BeautifulSoup(archive_soup.co
+        soup = BeautifulSoup(archive_soup.content, "html.pars
