@@ -91,4 +91,4 @@ for index in range(1, 6300):
 
         soup = BeautifulSoup(archive_soup.content, "html.parser")
 
-        all_link
+        all_links = soup.find_all("a")
