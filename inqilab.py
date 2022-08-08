@@ -92,4 +92,6 @@ for index in range(1, 6300):
         soup = BeautifulSoup(archive_soup.content, "html.parser")
 
         all_links = soup.find_all("a")
-        page_links_length 
+        page_links_length = len(all_links)
+
+     
