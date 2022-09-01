@@ -97,4 +97,4 @@ for index in range(1, 6300):
         if page_links_length == 0:
             break
         else:
-         
+            for link in all_
