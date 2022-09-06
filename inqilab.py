@@ -98,4 +98,4 @@ for index in range(1, 6300):
             break
         else:
             for link in all_links:
-                l
+                link_separator = lin
