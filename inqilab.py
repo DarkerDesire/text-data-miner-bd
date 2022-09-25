@@ -99,4 +99,5 @@ for index in range(1, 6300):
         else:
             for link in all_links:
                 link_separator = link.get('href')
-           
+                try:
+      
