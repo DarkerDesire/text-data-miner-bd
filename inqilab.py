@@ -100,4 +100,5 @@ for index in range(1, 6300):
             for link in all_links:
                 link_separator = link.get('href')
                 try:
-                    link_tokens = link_separator.
+                    link_tokens = link_separator.split("/")
+                ex
