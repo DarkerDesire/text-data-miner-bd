@@ -100,4 +100,4 @@ for index in range(1, 6300):
             for link in all_links:
                 link_separator = link.get('href')
                 try:
-      
+                    link_t
