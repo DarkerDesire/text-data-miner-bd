@@ -106,4 +106,4 @@ for index in range(1, 6300):
                 if len(link_tokens) == 6 and link_tokens[3] == "article":
                     article_url = link_separator
                 else:
-           
+                    continue
