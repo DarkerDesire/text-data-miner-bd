@@ -109,4 +109,4 @@ for index in range(1, 6300):
                     continue
 
                 try:
-                    article_data 
+                    article_data = requests.get(article_
