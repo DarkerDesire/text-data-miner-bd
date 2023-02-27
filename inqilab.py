@@ -112,4 +112,5 @@ for index in range(1, 6300):
                     article_data = requests.get(article_url).text
                 except:
                     print("No response for content in link,trying to reconnect")
-                    time
+                    time.sleep(2)
+          
