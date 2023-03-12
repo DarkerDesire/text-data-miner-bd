@@ -113,4 +113,5 @@ for index in range(1, 6300):
                 except:
                     print("No response for content in link,trying to reconnect")
                     time.sleep(2)
-          
+                    continue
+ 
