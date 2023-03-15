@@ -114,4 +114,6 @@ for index in range(1, 6300):
                     print("No response for content in link,trying to reconnect")
                     time.sleep(2)
                     continue
-                prin
+                print(article_url)
+
+            
