@@ -116,4 +116,4 @@ for index in range(1, 6300):
                     continue
                 print(article_url)
 
-            
+                article_soup = Bea
