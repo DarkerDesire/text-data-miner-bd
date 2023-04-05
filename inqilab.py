@@ -118,4 +118,5 @@ for index in range(1, 6300):
 
                 article_soup = BeautifulSoup(article_data, "html.parser")
 
-             
+                try:
+         
