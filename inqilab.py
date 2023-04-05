@@ -116,4 +116,6 @@ for index in range(1, 6300):
                     continue
                 print(article_url)
 
-                article_soup = BeautifulSoup(article_data
+                article_soup = BeautifulSoup(article_data, "html.parser")
+
+             
