@@ -120,4 +120,5 @@ for index in range(1, 6300):
 
                 try:
                     # date = article_soup.find("div",{"class":"date"}).get_text().split(",")[2].strip()
-                    date = article_soup.find("h5").get_text().split
+                    date = article_soup.find("h5").get_text().split(":")[1]
+            
