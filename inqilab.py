@@ -123,4 +123,4 @@ for index in range(1, 6300):
                     date = article_soup.find("h5").get_text().split(":")[1]
                     date_tokens = date.split(",")
                     day_month = date_tokens[0]
-                    day = day
+                    day = day_month.split(" ")
