@@ -126,4 +126,5 @@ for index in range(1, 6300):
                     day = day_month.split(" ")[0]
                     month = day_month.split(" ")[1]
                     day = date_translator(day)
-                    month = m
+                    month = month_converter(month)
+        
