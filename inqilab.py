@@ -127,4 +127,5 @@ for index in range(1, 6300):
                     month = day_month.split(" ")[1]
                     day = date_translator(day)
                     month = month_converter(month)
-                    year = date_translator(dat
+                    year = date_translator(date_tokens[1].strip())
+     
