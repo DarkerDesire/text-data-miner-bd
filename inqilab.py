@@ -130,4 +130,5 @@ for index in range(1, 6300):
                     year = date_translator(date_tokens[1].strip())
                 except:
                     day = "01"
-            
+                    month = "01"
+ 
