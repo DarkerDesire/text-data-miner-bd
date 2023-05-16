@@ -132,4 +132,5 @@ for index in range(1, 6300):
                     day = "01"
                     month = "01"
                     year = "2000"
-                t
+                try:
+                
