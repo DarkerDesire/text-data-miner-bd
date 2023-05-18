@@ -137,4 +137,4 @@ for index in range(1, 6300):
                 except:
                     title = ""
                 try:
-                    article_content = article_soup.fi
+                    article_content = article_soup.find("div", {"id": "ar_ne
