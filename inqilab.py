@@ -136,4 +136,5 @@ for index in range(1, 6300):
                     title = article_soup.find("title").get_text()
                 except:
                     title = ""
- 
+                try:
+      
