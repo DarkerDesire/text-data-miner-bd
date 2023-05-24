@@ -138,4 +138,5 @@ for index in range(1, 6300):
                     title = ""
                 try:
                     article_content = article_soup.find("div", {"id": "ar_news_content"}).get_text()
-           
+                except:
+              
