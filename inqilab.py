@@ -146,4 +146,5 @@ for index in range(1, 6300):
                     author = ""
 
                 data = "<article>\n"
-                data += "<title>" + t
+                data += "<title>" + title + "</title>\n"
+   
