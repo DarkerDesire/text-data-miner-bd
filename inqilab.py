@@ -143,4 +143,6 @@ for index in range(1, 6300):
                 try:
                     author = article_soup.find("meta", {"name": "author"}).get('content')
                 except:
-                    author =
+                    author = ""
+
+              
