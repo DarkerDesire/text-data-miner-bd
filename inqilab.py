@@ -149,4 +149,4 @@ for index in range(1, 6300):
                 data += "<title>" + title + "</title>\n"
                 data += "<author>" + author + "</author>\n"
                 data += "<date>" + str(date) + "</date>\n"
-                data += "<text>\n" + article
+                data += "<text>\n" + article_content + "\n</text>\n"
