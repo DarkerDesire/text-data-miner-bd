@@ -152,4 +152,6 @@ for index in range(1, 6300):
                 data += "<text>\n" + article_content + "\n</text>\n"
                 data += "</article>"
 
-                output_file_name = link_tokens[3] + "_" + link
+                output_file_name = link_tokens[3] + "_" + link_tokens[4]
+
+              
