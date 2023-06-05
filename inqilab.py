@@ -154,4 +154,5 @@ for index in range(1, 6300):
 
                 output_file_name = link_tokens[3] + "_" + link_tokens[4]
 
-                output_dir = './{}/{}/{}/bn'.format(year, 
+                output_dir = './{}/{}/{}/bn'.format(year, month, day)
+         
