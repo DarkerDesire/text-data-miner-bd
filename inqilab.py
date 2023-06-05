@@ -152,4 +152,4 @@ for index in range(1, 6300):
                 data += "<text>\n" + article_content + "\n</text>\n"
                 data += "</article>"
 
-                output_
+                output_file_n
