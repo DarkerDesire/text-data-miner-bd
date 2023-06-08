@@ -158,4 +158,5 @@ for index in range(1, 6300):
                 raw_output_dir = '../' + "Raw" + '/' + "Inqilab" + '/' + output_dir
 
                 try:
-                    os.makedirs(o
+                    os.makedirs(output_dir)
+          
