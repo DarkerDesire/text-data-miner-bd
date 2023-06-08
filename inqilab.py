@@ -157,4 +157,5 @@ for index in range(1, 6300):
                 output_dir = './{}/{}/{}/bn'.format(year, month, day)
                 raw_output_dir = '../' + "Raw" + '/' + "Inqilab" + '/' + output_dir
 
+                try:
     
