@@ -162,4 +162,5 @@ for index in range(1, 6300):
                 except OSError:
                     pass
                 try:
-                    os.makedirs(raw_out
+                    os.makedirs(raw_output_dir)
+                
