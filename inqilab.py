@@ -164,4 +164,5 @@ for index in range(1, 6300):
                 try:
                     os.makedirs(raw_output_dir)
                 except OSError:
-    
+                    pass
+
