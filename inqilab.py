@@ -167,4 +167,4 @@ for index in range(1, 6300):
                     pass
 
                 try:
-                    with open(raw_output_dir + '/'
+                    with open(raw_output_dir + '/' + output_file_name,
