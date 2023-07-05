@@ -170,4 +170,4 @@ for index in range(1, 6300):
                     with open(raw_output_dir + '/' + output_file_name, 'w', encoding='utf8') as file:
                         file.write(str(article_soup))
                 except:
-            
+                    pass
