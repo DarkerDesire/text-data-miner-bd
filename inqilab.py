@@ -171,3 +171,5 @@ for index in range(1, 6300):
                         file.write(str(article_soup))
                 except:
                     pass
+
+                try:
