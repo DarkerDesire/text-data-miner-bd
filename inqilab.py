@@ -175,4 +175,5 @@ for index in range(1, 6300):
                 try:
                     with open(output_dir + '/' + output_file_name, 'w', encoding='utf8') as file:
                         file.write(data)
-               
+                except:
+         
