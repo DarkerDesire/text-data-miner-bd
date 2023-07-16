@@ -2,4 +2,4 @@ import os
 import json
 import time
 from datetime import date, timedelta
-from 
+from bs4 import Beautif
