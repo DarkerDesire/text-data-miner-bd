@@ -6,4 +6,4 @@ from bs4 import BeautifulSoup
 import requests
 
 newspaper_base_url = 'https://www.ittefaq.com.bd/'
-newspaper_ar
+newspaper_archive_base_url = 'https://
