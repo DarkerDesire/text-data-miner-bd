@@ -8,4 +8,4 @@ import requests
 newspaper_base_url = 'https://www.ittefaq.com.bd/'
 newspaper_archive_base_url = 'https://www.ittefaq.com.bd/archives/'
 
-# sta
+# start_date = date(2019,  4,
