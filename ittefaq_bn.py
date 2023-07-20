@@ -9,4 +9,5 @@ newspaper_base_url = 'https://www.ittefaq.com.bd/'
 newspaper_archive_base_url = 'https://www.ittefaq.com.bd/archives/'
 
 # start_date = date(2019,  4, 30)
-# end_date   = date
+# end_date   = date.today()
+start_dat
