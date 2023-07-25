@@ -14,4 +14,6 @@ start_date = date(2019, 4, 30)
 end_date = date.today()
 delta = end_date - start_date
 output_result = []
-data
+data = []
+
+for
