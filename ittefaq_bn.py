@@ -16,4 +16,4 @@ delta = end_date - start_date
 output_result = []
 data = []
 
-for
+for i in range(delta.days + 1):
