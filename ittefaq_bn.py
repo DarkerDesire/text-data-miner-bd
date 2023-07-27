@@ -17,3 +17,4 @@ output_result = []
 data = []
 
 for i in range(delta.days + 1):
+    date_str = 
