@@ -17,4 +17,6 @@ output_result = []
 data = []
 
 for i in range(delta.days + 1):
-    date_str = start_date + timedelta(da
+    date_str = start_date + timedelta(days=i)
+
+    month 
