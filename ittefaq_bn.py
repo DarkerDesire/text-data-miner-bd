@@ -19,4 +19,4 @@ data = []
 for i in range(delta.days + 1):
     date_str = start_date + timedelta(days=i)
 
-    month 
+    month = str(date_str.m
