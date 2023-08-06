@@ -21,4 +21,5 @@ for i in range(delta.days + 1):
 
     month = str(date_str.month)
     day = str(date_str.day)
-    if date_str.month < 10: month = "0" + mont
+    if date_str.month < 10: month = "0" + month
+    if date_str.day < 10:   da
