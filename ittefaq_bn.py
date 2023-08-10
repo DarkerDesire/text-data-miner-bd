@@ -24,4 +24,4 @@ for i in range(delta.days + 1):
     if date_str.month < 10: month = "0" + month
     if date_str.day < 10:   day = "0" + day
 
-   
+    output_dir = './
