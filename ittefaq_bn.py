@@ -25,4 +25,4 @@ for i in range(delta.days + 1):
     if date_str.day < 10:   day = "0" + day
 
     output_dir = './{}/{}/{}/bn'.format(date_str.year, date_str.month, date_str.day)
-    raw_output_dir = '../' + "Raw" + '
+    raw_output_dir = '../' + "Raw" + '/' + "Ittefaq.com" 
