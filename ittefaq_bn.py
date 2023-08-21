@@ -29,3 +29,4 @@ for i in range(delta.days + 1):
 
     try:
         os.makedirs(output_dir)
+    except OSEr
