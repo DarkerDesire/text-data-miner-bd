@@ -28,4 +28,4 @@ for i in range(delta.days + 1):
     raw_output_dir = '../' + "Raw" + '/' + "Ittefaq.com" + '/' + output_dir
 
     try:
-     
+        os.makedirs(output_dir)
