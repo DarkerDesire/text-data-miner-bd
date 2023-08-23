@@ -35,4 +35,6 @@ for i in range(delta.days + 1):
     try:
         os.makedirs(raw_output_dir)
     except OSError:
-        
+        pass
+
+    url = newspap
