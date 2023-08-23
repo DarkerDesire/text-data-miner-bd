@@ -32,4 +32,5 @@ for i in range(delta.days + 1):
     except OSError:
         pass
 
-    
+    try:
+        os.makedirs(r
