@@ -37,4 +37,4 @@ for i in range(delta.days + 1):
     except OSError:
         pass
 
-    url = newspap
+    url = newspaper_archive_base_url +
