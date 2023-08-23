@@ -33,4 +33,4 @@ for i in range(delta.days + 1):
         pass
 
     try:
-        os.makedirs(r
+        os.makedirs(raw_output_dir
