@@ -37,4 +37,4 @@ for i in range(delta.days + 1):
     except OSError:
         pass
 
-    url = newspaper_archive_base_url + 'online-edition/{}/{}/{
+    url = newspaper_archive_base_url + 'online-edition/{}/{}/{}'.format(date_str.year, m
