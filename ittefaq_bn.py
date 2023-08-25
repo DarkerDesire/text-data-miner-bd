@@ -42,4 +42,5 @@ for i in range(delta.days + 1):
     print("online-edition")
 
     # url = newspaper_archive_base_url + 'print-edition/{}/{}/{}'.format(date_str.year, month , day)
-    # print(date
+    # print(date_str)
+    # print("
