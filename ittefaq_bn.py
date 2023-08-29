@@ -44,4 +44,4 @@ for i in range(delta.days + 1):
     # url = newspaper_archive_base_url + 'print-edition/{}/{}/{}'.format(date_str.year, month , day)
     # print(date_str)
     # print("print-edition")
-    with open("bn_l
+    with open("bn_log.txt", 'a', en
