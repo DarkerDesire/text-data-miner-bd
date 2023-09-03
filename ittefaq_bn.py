@@ -50,4 +50,4 @@ for i in range(delta.days + 1):
     try:
         archive_soup = requests.get(url)
     except:
-        
+        print("No response
