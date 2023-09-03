@@ -50,4 +50,6 @@ for i in range(delta.days + 1):
     try:
         archive_soup = requests.get(url)
     except:
-        print("No response for links in archive,trying to reconn
+        print("No response for links in archive,trying to reconnect")
+        time.sleep(2)
+ 
