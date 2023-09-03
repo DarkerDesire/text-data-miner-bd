@@ -48,3 +48,4 @@ for i in range(delta.days + 1):
         file.write(str(date_str) + ' ' + "online-edition" + '\n')
 
     try:
+        archive_so
