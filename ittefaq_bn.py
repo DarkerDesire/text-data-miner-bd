@@ -45,4 +45,4 @@ for i in range(delta.days + 1):
     # print(date_str)
     # print("print-edition")
     with open("bn_log.txt", 'a', encoding='utf8') as file:
-        file.write(str(date_str) + ' ' + "o
+        file.write(str(date_str) + ' ' + "online-edition" + '\
