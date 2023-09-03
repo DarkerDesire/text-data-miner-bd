@@ -48,4 +48,6 @@ for i in range(delta.days + 1):
         file.write(str(date_str) + ' ' + "online-edition" + '\n')
 
     try:
-        archive_soup = requests.get(ur
+        archive_soup = requests.get(url)
+    except:
+        
