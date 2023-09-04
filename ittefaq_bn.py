@@ -54,4 +54,4 @@ for i in range(delta.days + 1):
         time.sleep(2)
         continue
 
-    soup = Beautif
+    soup = BeautifulSoup(archive_soup.conten
