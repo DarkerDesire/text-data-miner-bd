@@ -54,4 +54,5 @@ for i in range(delta.days + 1):
         time.sleep(2)
         continue
 
-    soup = BeautifulSoup(archive_soup.content, "html.parse
+    soup = BeautifulSoup(archive_soup.content, "html.parser")
+    # with open("d
