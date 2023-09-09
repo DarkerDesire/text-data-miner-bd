@@ -55,4 +55,5 @@ for i in range(delta.days + 1):
         continue
 
     soup = BeautifulSoup(archive_soup.content, "html.parser")
-    # with open("debug.txt", 'w', encoding='utf8') 
+    # with open("debug.txt", 'w', encoding='utf8') as file:
+    # file.
