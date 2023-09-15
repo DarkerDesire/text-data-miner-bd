@@ -58,4 +58,5 @@ for i in range(delta.days + 1):
     # with open("debug.txt", 'w', encoding='utf8') as file:
     # file.write(str(soup))
     # exit()
-    all_links = soup.find_all("a", attrs={"cla
+    all_links = soup.find_all("a", attrs={"class": ""})
+    page_links_
