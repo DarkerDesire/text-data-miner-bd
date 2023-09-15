@@ -59,4 +59,6 @@ for i in range(delta.days + 1):
     # file.write(str(soup))
     # exit()
     all_links = soup.find_all("a", attrs={"class": ""})
-    page_links_
+    page_links_length = len(all_links)
+
+ 
