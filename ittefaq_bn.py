@@ -61,4 +61,4 @@ for i in range(delta.days + 1):
     all_links = soup.find_all("a", attrs={"class": ""})
     page_links_length = len(all_links)
 
- 
+    if page_links
