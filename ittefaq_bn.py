@@ -62,4 +62,5 @@ for i in range(delta.days + 1):
     page_links_length = len(all_links)
 
     if page_links_length == 0:
-      
+        break
+    el
