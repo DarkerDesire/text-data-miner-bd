@@ -63,4 +63,5 @@ for i in range(delta.days + 1):
 
     if page_links_length == 0:
         break
-    el
+    else:
+        f
