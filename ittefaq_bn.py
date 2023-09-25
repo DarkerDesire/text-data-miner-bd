@@ -65,4 +65,4 @@ for i in range(delta.days + 1):
         break
     else:
         for link in all_links:
-            
+            article_url = link.ge
