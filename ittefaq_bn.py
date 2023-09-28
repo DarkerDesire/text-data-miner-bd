@@ -68,4 +68,6 @@ for i in range(delta.days + 1):
             article_url = link.get('href')
 
             link_separator = link.get('href').split('/')
-            link_separator_len = len(lin
+            link_separator_len = len(link_separator)
+
+            if
