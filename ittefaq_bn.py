@@ -70,4 +70,5 @@ for i in range(delta.days + 1):
             link_separator = link.get('href').split('/')
             link_separator_len = len(link_separator)
 
-            if link_separator_len == 6
+            if link_separator_len == 6:
+                if 
