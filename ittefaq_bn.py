@@ -71,4 +71,5 @@ for i in range(delta.days + 1):
             link_separator_len = len(link_separator)
 
             if link_separator_len == 6:
-                if "79445" in link_separat
+                if "79445" in link_separator[4]: continue
+          
