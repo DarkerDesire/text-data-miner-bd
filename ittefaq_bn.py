@@ -72,4 +72,4 @@ for i in range(delta.days + 1):
 
             if link_separator_len == 6:
                 if "79445" in link_separator[4]: continue
-                if "7944
+                if "79444" in link_separator[4]: co
