@@ -82,4 +82,4 @@ for i in range(delta.days + 1):
                 if "79397" in link_separator[4]: continue
                 if "79402" in link_separator[4]: continue
                 if "79420" in link_separator[4]: continue
-                if "7
+                if "79421" in link_s
