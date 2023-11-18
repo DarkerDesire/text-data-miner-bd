@@ -88,4 +88,4 @@ for i in range(delta.days + 1):
                 if "79414" in link_separator[4]: continue
                 if "79411" in link_separator[4]: continue
                 print(article_url)
-                output_file_name = 'bn_{}_{}
+                output_file_name = 'bn_{}_{}.txt'.format(link_se
