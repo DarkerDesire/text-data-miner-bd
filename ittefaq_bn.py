@@ -90,4 +90,5 @@ for i in range(delta.days + 1):
                 print(article_url)
                 output_file_name = 'bn_{}_{}.txt'.format(link_separator[3], link_separator[4])
 
-           
+                try:
+            
