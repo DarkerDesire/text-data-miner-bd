@@ -91,4 +91,4 @@ for i in range(delta.days + 1):
                 output_file_name = 'bn_{}_{}.txt'.format(link_separator[3], link_separator[4])
 
                 try:
-                    articl
+                    article_data = requests
