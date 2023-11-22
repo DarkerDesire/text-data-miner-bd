@@ -92,4 +92,5 @@ for i in range(delta.days + 1):
 
                 try:
                     article_data = requests.get(article_url)
-                
+                except:
+              
