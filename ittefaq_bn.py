@@ -96,4 +96,4 @@ for i in range(delta.days + 1):
                     print("No response,trying to reconnect")
                     time.sleep(2)
                     continue
-                article_
+                article_soup = BeautifulSoup(a
