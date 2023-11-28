@@ -94,4 +94,4 @@ for i in range(delta.days + 1):
                     article_data = requests.get(article_url)
                 except:
                     print("No response,trying to reconnect")
-            
+                    time.sleep(2)
