@@ -98,4 +98,4 @@ for i in range(delta.days + 1):
                     continue
                 article_soup = BeautifulSoup(article_data.content, "html.parser")
 
-     
+                with open
