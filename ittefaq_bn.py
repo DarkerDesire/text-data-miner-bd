@@ -98,4 +98,5 @@ for i in range(delta.days + 1):
                     continue
                 article_soup = BeautifulSoup(article_data.content, "html.parser")
 
-                with open(raw_output_dir + '/' + output_file_name, 'w', encoding='utf8')
+                with open(raw_output_dir + '/' + output_file_name, 'w', encoding='utf8') as file:
+    
