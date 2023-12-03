@@ -99,4 +99,6 @@ for i in range(delta.days + 1):
                 article_soup = BeautifulSoup(article_data.content, "html.parser")
 
                 with open(raw_output_dir + '/' + output_file_name, 'w', encoding='utf8') as file:
-                    file.write(str(article_url) + '\n' + str(ar
+                    file.write(str(article_url) + '\n' + str(article_soup))
+
+    
