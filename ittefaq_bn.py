@@ -101,4 +101,5 @@ for i in range(delta.days + 1):
                 with open(raw_output_dir + '/' + output_file_name, 'w', encoding='utf8') as file:
                     file.write(str(article_url) + '\n' + str(article_soup))
 
-    
+                try:
+   
