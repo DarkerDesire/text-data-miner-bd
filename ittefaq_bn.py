@@ -102,4 +102,5 @@ for i in range(delta.days + 1):
                     file.write(str(article_url) + '\n' + str(article_soup))
 
                 try:
-                    article_title = article_soup.find("div", {"class"
+                    article_title = article_soup.find("div", {"class": "dtl_hl_block"})
+  
