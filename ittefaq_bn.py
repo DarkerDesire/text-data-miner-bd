@@ -103,4 +103,4 @@ for i in range(delta.days + 1):
 
                 try:
                     article_title = article_soup.find("div", {"class": "dtl_hl_block"})
-  
+                    article_
