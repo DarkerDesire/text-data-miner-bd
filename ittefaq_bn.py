@@ -107,4 +107,5 @@ for i in range(delta.days + 1):
                 except:
                     article_title_text = ""
 
-                ta
+                tags = ""
+       
