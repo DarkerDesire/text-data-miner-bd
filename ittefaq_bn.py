@@ -105,4 +105,4 @@ for i in range(delta.days + 1):
                     article_title = article_soup.find("div", {"class": "dtl_hl_block"})
                     article_title_text = str(article_title.text.strip())
                 except:
-            
+                    article_t
