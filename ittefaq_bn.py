@@ -106,3 +106,5 @@ for i in range(delta.days + 1):
                     article_title_text = str(article_title.text.strip())
                 except:
                     article_title_text = ""
+
+                ta
