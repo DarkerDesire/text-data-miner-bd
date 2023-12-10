@@ -108,4 +108,5 @@ for i in range(delta.days + 1):
                     article_title_text = ""
 
                 tags = ""
-       
+                try:
+      
