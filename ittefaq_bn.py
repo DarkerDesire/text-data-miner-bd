@@ -109,4 +109,4 @@ for i in range(delta.days + 1):
 
                 tags = ""
                 try:
-      
+                    ta
