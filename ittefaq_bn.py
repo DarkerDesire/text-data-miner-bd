@@ -109,4 +109,4 @@ for i in range(delta.days + 1):
 
                 tags = ""
                 try:
-                    tag_list = articl
+                    tag_list = article_soup.find("di
