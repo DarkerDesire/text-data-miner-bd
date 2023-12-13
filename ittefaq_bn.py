@@ -110,4 +110,4 @@ for i in range(delta.days + 1):
                 tags = ""
                 try:
                     tag_list = article_soup.find("div", {"id": "tags_list"})
-    
+                   
