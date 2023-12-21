@@ -115,4 +115,4 @@ for i in range(delta.days + 1):
                     tags = ""
 
                 try:
-                    art
+                    article_body = article_soup
