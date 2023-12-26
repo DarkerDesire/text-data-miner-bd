@@ -115,4 +115,4 @@ for i in range(delta.days + 1):
                     tags = ""
 
                 try:
-                    article_body = article_soup
+                    article_body = article_soup.find("div", {"clas
