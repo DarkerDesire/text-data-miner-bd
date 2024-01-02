@@ -117,4 +117,5 @@ for i in range(delta.days + 1):
                 try:
                     article_body = article_soup.find("div", {"class": "dtl_content_block"})
                     article_body_text = article_body.get_text(separator="\n\n")
-                exc
+                except:
+                   
