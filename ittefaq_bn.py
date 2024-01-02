@@ -120,4 +120,4 @@ for i in range(delta.days + 1):
                 except:
                     article_body_text = ""
 
-          
+                data = "<article>
