@@ -124,4 +124,4 @@ for i in range(delta.days + 1):
                 data += "<title>" + article_title_text + "</title>\n"
                 data += "<date>" + str(date_str) + "</date>\n"
                 data += "<topic>" + tags + "</topic>\n"
-                data += "<text>\n" + artic
+                data += "<text>\n" + article_body_text + "\n</text>\n"
