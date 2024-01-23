@@ -127,4 +127,5 @@ for i in range(delta.days + 1):
                 data += "<text>\n" + article_body_text + "\n</text>\n"
                 data += "</article>"
 
-                with open(output_dir + '/' + output_file_name, 'w', 
+                with open(output_dir + '/' + output_file_name, 'w', encoding='utf8') as file:
+ 
