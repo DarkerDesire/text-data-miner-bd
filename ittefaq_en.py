@@ -60,3 +60,17 @@ for i in range(0, lim1):
         if j == 5:
             if max_sports_pages >= i + 1:
                 url = newspaper_base_url + "sports/page/" + str(i + 1)
+            else:
+                url = "none"
+        if j == 6:
+            if max_sci_tech_pages >= i + 1:
+                url = newspaper_base_url + "sci-tech/page/" + str(i + 1)
+            else:
+                url = "none"
+        if j == 7:
+            if max_culture_pages >= i + 1:
+                url = newspaper_base_url + "culture/page/" + str(i + 1)
+            else:
+                url = "none"
+        if not ("none" in url):
+            print('\n' + url)
