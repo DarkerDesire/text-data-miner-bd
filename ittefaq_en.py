@@ -44,3 +44,19 @@ for i in range(0, lim1):
                 url = "none"
         if j == 2:
             if max_international_pages >= i + 1:
+                url = newspaper_base_url + "international/page/" + str(i + 1)
+            else:
+                url = "none"
+        if j == 3:
+            if max_business_pages >= i + 1:
+                url = newspaper_base_url + "business/page/" + str(i + 1)
+            else:
+                url = "none"
+        if j == 4:
+            if max_editorial_oped_pages >= i + 1:
+                url = newspaper_base_url + "editorial-oped/page/" + str(i + 1)
+            else:
+                url = "none"
+        if j == 5:
+            if max_sports_pages >= i + 1:
+                url = newspaper_base_url + "sports/page/" + str(i + 1)
