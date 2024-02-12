@@ -74,3 +74,21 @@ for i in range(0, lim1):
                 url = "none"
         if not ("none" in url):
             print('\n' + url)
+
+            archive_soup = ""
+            try:
+                archive_soup = requests.get(url, proxies={"http": proxy, "https": proxy})
+            except:
+                stuck = 1
+
+            while stuck == 1:
+                time.sleep(10)
+                try:
+                    archive_soup = requests.get(url)
+                    stuck = 0
+                except:
+                    stuck = 1
+
+            soup = BeautifulSoup(archive_soup.content, "html.parser")
+            all_links = soup.find_all("a", attrs={"class": "read-more-link"})
+            page_links_length = len(all_links)
