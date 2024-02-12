@@ -118,3 +118,30 @@ for i in range(0, lim1):
                         article_title = article_soup.find("title")
                         article_title_text = str(article_title.text.strip())
                         article_title_text = article_title_text[0:len(article_title_text) - 16]
+                    except:
+                        article_title_text = ""
+                    txtFiletitle = article_title_text
+                    txtFiletitle = txtFiletitle.translate(str.maketrans('', '', string.punctuation))
+
+                    try:
+                        date_published = article_soup.find("time")['datetime']
+                        date_published = date_published[0:10]
+                    except:
+                        date_published = "2000-01-01"
+                    yr_mon_day = date_published.split('-')
+
+                    print(article_url + " " + date_published)
+
+                    url_parts = url.split('/')
+                    output_dir = './{}/{}/{}/en'.format(yr_mon_day[0], yr_mon_day[1], yr_mon_day[2])
+                    raw_output_dir = '../' + "Raw" + '/' + "Ittefaq.com" + '/' + output_dir
+                    output_file_name = url_parts[3] + '_' + url_parts[4] + '_' + str(
+                        i + 1) + '_' + txtFiletitle + "_abc.txt"
+                    try:
+                        os.makedirs(raw_output_dir)
+                    except OSError:
+                        pass
+                    try:
+                        with open(raw_output_dir + '/' + output_file_name, 'w', encoding='utf8') as file:
+                            file.write(str(article_soup))
+                    except:
