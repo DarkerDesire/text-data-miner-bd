@@ -92,3 +92,29 @@ for i in range(0, lim1):
             soup = BeautifulSoup(archive_soup.content, "html.parser")
             all_links = soup.find_all("a", attrs={"class": "read-more-link"})
             page_links_length = len(all_links)
+
+            if page_links_length == 0:
+                continue
+            else:
+                for link in all_links:
+                    article_url = link.get('href')
+                    article_data = ""
+                    try:
+                        article_data = requests.get(article_url)
+                    except:
+                        stuck = 1
+
+                    while stuck == 1:
+                        time.sleep(10)
+                        try:
+                            article_data = requests.get(article_url, proxies={"http": proxy, "https": proxy})
+                            stuck = 0
+                        except:
+                            stuck = 1
+
+                    article_soup = BeautifulSoup(article_data.content, "html.parser")
+
+                    try:
+                        article_title = article_soup.find("title")
+                        article_title_text = str(article_title.text.strip())
+                        article_title_text = article_title_text[0:len(article_title_text) - 16]
