@@ -161,3 +161,17 @@ for i in range(0, lim1):
 
                     data = "<article>\n"
                     data += "<title>" + article_title_text + "</title>\n"
+                    data += "<date>" + date_published + "</date>\n"
+                    data += "<text>\n" + textPart + "\n</text>\n"
+                    data += "</article>"
+
+                    try:
+                        os.makedirs(output_dir)
+                    except OSError:
+                        pass
+                    try:
+                        with open(output_dir + '/' + output_file_name, 'w', encoding='utf8') as file:
+                            file.write(data + '\n')
+                    except:
+                        continue
+                    # time.sleep(3)
