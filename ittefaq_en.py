@@ -145,3 +145,19 @@ for i in range(0, lim1):
                         with open(raw_output_dir + '/' + output_file_name, 'w', encoding='utf8') as file:
                             file.write(str(article_soup))
                     except:
+                        continue
+
+                    paragraphs = article_soup.find_all("p")
+                    textPart = ""
+                    if len(paragraphs) > 0:
+                        for para in paragraphs:
+                            if len(para.attrs) == 0:
+                                textPart += para.get_text() + "\n\n"
+                    else:
+                        textPart = ""
+
+                    # article_content = article_soup.find_all("div", {"class": "content_detail"})
+                    # article_body = article_soup.find("div", {"itemprop": "articleBody"})
+
+                    data = "<article>\n"
+                    data += "<title>" + article_title_text + "</title>\n"
