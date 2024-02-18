@@ -36,3 +36,26 @@ for i in range(delta.days + 1):
     index = index + 1
     url = newspaper_archive_base_url + str(date_str.year) + "/" + str(date_str.month) + "/" + str(date_str.day)
     try:
+        archive_soup = requests.get(url)
+    except:
+        print("No response for links in archive,trying to reconnect")
+        time.sleep(2)
+        continue
+    print(url)
+    soup = BeautifulSoup(archive_soup.content, "html.parser")
+
+    all_links = soup.find_all("a")
+    page_links_length = len(all_links)
+
+    if page_links_length == 0:
+        break
+    else:
+        for link in all_links:
+            article_url = link.get('href')
+            link_separator = article_url.split('/')
+            if len(link_separator) != 6 or link_separator[2] != "www.jugantor.com":
+                continue
+            if link_separator[3] == "covid-19":
+                output_file_name = '{}_{}.txt'.format(link_separator[3], link_separator[4])
+                title = ""
+            else:
