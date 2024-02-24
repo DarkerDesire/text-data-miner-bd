@@ -81,3 +81,27 @@ for i in range(delta.days + 1):
             length = length - 1
 
             i = 0
+
+            article_content = ""
+            for paragraph in paragraphs:
+                if i == 0:
+                    Author_date = paragraph.get_text().splitlines()
+                    author = Author_date[0]
+                    date = Author_date[1]
+                    date = date.split(",")[0]
+
+                elif i <= length - 5:
+                    article_content += paragraph.get_text() + "\n"
+                else:
+                    pass
+                i = i + 1
+
+            data = "<article>\n"
+            data += "<title>" + title + "</title>\n"
+            data += "<date>" + date + "</date>\n"
+            data += "<author>" + author + "</author>\n"
+            data += "<text>\n" + article_content + "</text>\n"
+            data += "</article>"
+
+            with open(output_dir + '/' + output_file_name, 'w', encoding='utf8') as file:
+                file.write(data + '\n\n')
