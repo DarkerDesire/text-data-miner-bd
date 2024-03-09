@@ -45,3 +45,16 @@ for i in range(delta.days + 1):
         soup = BeautifulSoup(archive_soup.content, "html.parser")
         all_links = soup.find_all("a", attrs={"class": "link_overlay"})
         page_links_length = len(all_links)
+
+        if page_links_length == 0:
+            break
+        else:
+            for link in all_links:
+                link_separator = link.get('href').split('/')
+                link = link_separator[1] + "/" + link_separator[2] + "/" + link_separator[3]
+                output_file_name = 'bn_{}{}.txt'.format(link_separator[2], link_separator[3])
+                article_url = newspaper_base_url + link
+                try:
+                    article_data = requests.get(article_url).text
+                except:
+                    print("No response for content in link,trying to reconnect")
