@@ -58,3 +58,22 @@ for i in range(delta.days + 1):
                     article_data = requests.get(article_url).text
                 except:
                     print("No response for content in link,trying to reconnect")
+                    time.sleep(2)
+                    continue
+                with open(raw_output_dir + '/' + output_file_name, 'w', encoding='utf8') as file:
+                    file.write(str(article_url) + '\n' + str(article_data))
+                article_soup = BeautifulSoup(article_data, "html.parser")
+
+                print(article_url)
+
+                try:
+                    article_info = article_soup.find_all("div", {"class": "additional_info_container"})
+                    author = article_soup.find("div", {"class": "author"}).find("span", {"class": "name"}).text
+
+                except:
+                    author = ""
+
+                try:
+                    date_published = article_soup.find("span", {"itemprop": "datePublished"}).text
+                except:
+                    date_published = ""
