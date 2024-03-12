@@ -77,3 +77,21 @@ for i in range(delta.days + 1):
                     date_published = article_soup.find("span", {"itemprop": "datePublished"}).text
                 except:
                     date_published = ""
+
+                try:
+                    tag_array = ""
+                    article_tag = article_soup.find("strong", {"class": "topic_list"})
+                    tags = article_soup.find("div", {"class": "topic_list"}).find_all("a")
+                    for tag in tags:
+                        tag_array += tag.text + " "
+                except:
+                    tag_array = ""
+
+                article_content = article_soup.find_all("div", {"class": "content_detail"})
+                article_title = article_soup.find("h1", {"class": "title"})
+                article_body = article_soup.find("div", {"itemprop": "articleBody"})
+
+                try:
+                    article_title_text = str(article_title.text.strip())
+                except:
+                    article_title_text = ""
