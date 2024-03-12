@@ -95,3 +95,18 @@ for i in range(delta.days + 1):
                     article_title_text = str(article_title.text.strip())
                 except:
                     article_title_text = ""
+                try:
+                    article_body_text = article_body.get_text(separator="\n\n")
+                except:
+                    article_body_text = ""
+
+                data = "<article>\n"
+                data += "<title>" + article_title_text + "</title>\n"
+                data += "<date>" + date_published + "</date>\n"
+                data += "<topic>" + tag_array + "</topic>\n"
+                data += "<author>" + author + "</author>\n"
+                data += "<text>" + article_body_text + "</text>\n"
+                data += "</article>"
+
+                with open(output_dir + '/' + output_file_name, 'w', encoding='utf8') as file:
+                    file.write(data + '\n\n')
