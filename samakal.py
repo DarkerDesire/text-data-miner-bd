@@ -54,3 +54,28 @@ for i in range(delta.days + 1):
                 title = title.replace("-", " ")
                 try:
                     print(article_url)
+                    article_data = requests.get(article_url).text
+                except:
+                    print("No response for content in link,trying to reconnect")
+                    time.sleep(2)
+                    continue
+                with open(raw_output_dir + '/' + output_file_name, 'w') as file:
+                    file.write(str(article_url) + '\n' + str(article_data))
+
+                article_soup = BeautifulSoup(article_data, "html.parser")
+
+            paragraphs = article_soup.find_all("p")
+
+            # title = article_soup.find("h1").get_text()
+
+            length = len(paragraphs)
+            length = length - 1
+
+            i = 0
+
+            article_content = ""
+            for paragraph in paragraphs:
+                if i == 0:
+                    Author_date = paragraph.get_text().splitlines()
+                    author = Author_date[0]
+                    date = Author_date[1]
