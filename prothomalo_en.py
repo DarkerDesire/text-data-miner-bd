@@ -78,3 +78,13 @@ for i in range(delta.days + 1):
 
             article_content = article_soup.find_all("div", {"class": "content_detail"})
             article_body = article_soup.find("div", {"itemprop": "articleBody"})
+
+            data = "<article>\n"
+            data += "<title>" + article_title_text + "</title>\n"
+            data += "<date>" + date_published + "</date>\n"
+            data += "<author>" + author + "</author>\n"
+            data += "<text>\n" + article_body.get_text(separator="\n") + "\n</text>\n"
+            data += "</article>"
+
+            with open(output_dir + '/' + output_file_name, 'w', encoding='utf8') as file:
+                file.write(data + '\n')
