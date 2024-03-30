@@ -99,3 +99,4 @@ for i in range(delta.days + 1):
             data += "</article>"
 
             with open(output_dir + '/' + output_file_name, 'w', encoding='utf8') as file:
+                file.write(data + '\n\n')
